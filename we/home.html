@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>home</title>
+    <style>
+
+        #slideshow{
+            padding: 2%;
+        }
+        #slideshow img{
+
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        #students{
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            grid-gap: 3%;
+            margin: 3%;
+        }
+        #students img{
+            width: 20%;
+
+        }
+        #students div{
+            display: grid;
+            justify-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Home</h1>
+    <div id="slideshow"></div>
+    <button onclick="sortLH()">Sort: Low to High</button>
+    <button onclick="sortHL()">Sort: High to Low</button>
+    <div id= 'students'></div>
+
+</body>
+
+</html>
+
+<script src="home.js"></script>
